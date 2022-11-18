@@ -2,14 +2,16 @@
 // import
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-
+ 
 // import compo
 import Header from "./component/00.Header.js";
 import Main from "./component/01.Main";
-import Calender from "./component/02.Calender";
-import Scheduling from "./component/03.Scheduling";
-import Timeline from "./component/04.Timeline";
-import Agenda from "./component/05.Agenda";
+import MobileMonthView from "./component/02.MobileMonthView";
+import Responsive from "./component/03.Responsive";
+import ContentCustomization from "./component/04.ContentCustomization";
+import FullEventCustomization from "./component/05.FullEventCustomization";
+import CustomizingTheHeader from "./component/06.CustomizingTheHeader";
+import CustomEventTooltip from "./component/07.CustomEventTooltip";
 
 // function
 function App() {
@@ -19,12 +21,14 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Main></Main>}></Route>
-        <Route path="/Calender" element={<Calender></Calender>}></Route>
-        <Route path="/Scheduling" element={<Scheduling></Scheduling>}></Route>
-        <Route path="/Timeline" element={<Timeline></Timeline>}></Route>
-        <Route path="/Agenda" element={<Agenda></Agenda>}></Route>
+        <Route path="/MobileMonthView" element={<MobileMonthView></MobileMonthView>}></Route>
+        <Route path="/Responsive" element={<Responsive></Responsive>}></Route>
+        <Route path="/ContentCustomization" element={<ContentCustomization></ContentCustomization>}></Route>
+        <Route path="/FullEventCustomization" element={<FullEventCustomization></FullEventCustomization>}></Route>
+        <Route path="/CustomizingTheHeader" element={<CustomizingTheHeader></CustomizingTheHeader>}></Route>
+        <Route path="/CustomEventTooltip" element={<CustomEventTooltip></CustomEventTooltip>}></Route>
       </Routes>
-
+      
       
     </>
   );

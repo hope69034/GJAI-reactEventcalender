@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+/* 02 x*/
+/* 03 x*/
+/* 04 o*/
+.md-custom-event-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.md-custom-event-cont {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  padding-top: 10px;
+  font-size: 13px;
+}
+.md-custom-event-btn,
+.md-custom-event-btn.mbsc-button {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  line-height: 20px;
+}
+.md-custom-event .mbsc-material.mbsc-event-time {
+  margin-top: 5px;
+}
+
+
+/* 05 */
+.md-full-event {
+  width: 100%;
+  padding: 10px 0;
+}
+.md-full-event-img {
+  width: 100px;
+  border-radius: 6px;
+  float: left;
+}
+.md-full-event-details {
+  margin-left: 114px;
+}
+.md-full-event-title {
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.md-full-event-location {
+  display: inline-block;
+  line-height: 1.4;
+  margin-right: 40px;
+}
+.md-full-event-time {
+  display: inline-block;
+  line-height: 1.4;
+}
+.md-full-event-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #aaa;
+}
+
+
+/* 06 */
+.md-custom-header-controls {
+  display: flex;
+  flex: 1 0 auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.md-custom-header-nav,
+.md-custom-header-view {
+  width: 180px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.md-custom-header-button.mbsc-button {
+  font-size: 20px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.md-custom-header .mbsc-segmented {
+  width: 110px;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.md-custom-header .mbsc-material.mbsc-segmented,
+.md-custom-header .mbsc-windows.mbsc-segmented {
+  padding: 0;
+}
+
+.md-custom-header .mbsc-segmented .mbsc-segmented-button {
+  font-size: 20px;
+  height: 32px;
+  padding: 0;
+}
+
+
+
+/* 07 */
+.md-tooltip .mbsc-popup-content {
+  padding: 0;
+}
+
+.md-tooltip {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.md-tooltip-header {
+  padding: 12px 16px;
+  color: #eee;
+}
+
+.md-tooltip-info {
+  padding: 16px 16px 60px 16px;
+  position: relative;
+  line-height: 32px;
+}
+
+.md-tooltip-time,
+.md-tooltip-status-button {
+  float: right;
+}
+
+.md-tooltip-title {
+  margin-bottom: 15px;
+}
+
+.md-tooltip-text {
+  font-weight: 300;
+}
+
+.md-tooltip-info .mbsc-button {
+  font-size: 14px;
+  margin: 0;
+}
+
+.md-tooltip-info .mbsc-button.mbsc-material {
+  font-size: 12px;
+}
+
+.md-tooltip-view-button {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+.md-tooltip-delete-button {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
 }
