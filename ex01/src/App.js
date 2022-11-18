@@ -5,13 +5,14 @@ import "./App.css";
  
 // import compo
 import Header from "./component/00.Header.js";
-import Main from "./component/01.Main";
+import DesktopMonthView from "./component/01.DesktopMonthView";
 import MobileMonthView from "./component/02.MobileMonthView";
 import Responsive from "./component/03.Responsive";
 import ContentCustomization from "./component/04.ContentCustomization";
 import FullEventCustomization from "./component/05.FullEventCustomization";
 import CustomizingTheHeader from "./component/06.CustomizingTheHeader";
 import CustomEventTooltip from "./component/07.CustomEventTooltip";
+
 
 // function
 function App() {
@@ -20,7 +21,7 @@ function App() {
       <Header></Header>
 
       <Routes>
-        <Route path="/" element={<Main></Main>}></Route>
+        <Route path="/" element={<DesktopMonthView></DesktopMonthView>}></Route>
         <Route path="/MobileMonthView" element={<MobileMonthView></MobileMonthView>}></Route>
         <Route path="/Responsive" element={<Responsive></Responsive>}></Route>
         <Route path="/ContentCustomization" element={<ContentCustomization></ContentCustomization>}></Route>

@@ -4,7 +4,7 @@ function Header() {
   return (
     <>
    
-        <Link className='HeaderLink' to="/"> Main | </Link>  
+        <Link className='HeaderLink' to="/"> DesktopMonthView | </Link>  
         <Link className='HeaderLink' to="/MobileMonthView"> MobileMonthView | </Link>
         <Link className='HeaderLink' to="/Responsive"> Responsive | </Link>
         <Link className='HeaderLink' to="/ContentCustomization"> ContentCustomization | </Link>
