@@ -4,6 +4,7 @@ import "@mobiscroll/react/dist/css/mobiscroll.min.css";
 
 function Testpage() {
 
+    
     const [myEvents, setEvents] = React.useState([]);
 
     React.useEffect(() => {
@@ -12,6 +13,7 @@ function Testpage() {
         }, 'jsonp');
     }, []);
     
+    /* 이벤트클릭하면 이벤트제목하단출력 */
     const onEventClick = React.useCallback((event) => {
         toast({
             message: event.event.title
