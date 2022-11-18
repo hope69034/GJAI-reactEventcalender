@@ -4,17 +4,17 @@ import "@mobiscroll/react/dist/css/mobiscroll.min.css";
 /* import "@mobiscroll/react/dist/css/mobiscroll.css"; */
  
 
-function Main() { 
+function AddButton() { 
 
     
 
     return (
     <>
-   <br></br> <h1>main page</h1>
+   <br></br> <h1>AddButton</h1>
     </>
        
     ); 
 }
 
 
-export default Main;
+export default AddButton;

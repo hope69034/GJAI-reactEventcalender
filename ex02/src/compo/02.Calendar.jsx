@@ -2,7 +2,7 @@ import { Eventcalendar, getJson, toast } from '@mobiscroll/react';
 import React from "react";
 import "@mobiscroll/react/dist/css/mobiscroll.min.css";
 
-function MobileMonthView() {
+function Calender() {
 
     const [myEvents, setEvents] = React.useState([]);
 
@@ -40,4 +40,4 @@ function MobileMonthView() {
        />
     ); 
 }
-export default MobileMonthView
+export default Calender
