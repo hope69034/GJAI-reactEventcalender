@@ -6,7 +6,7 @@ function Header() {
         <Link className='HeaderLink' to="/"> Timeline |</Link>
         <Link className='HeaderLink' to="/Calendar"> Calendar | </Link>
         <Link className='HeaderLink' to="/Mypage"> Mypage | </Link>  
-        <Link className='HeaderLink' to="/Addbutton"> Addbutton |</Link>      
+        <Link className='HeaderLink' to="/Addschedule"> Addschedule |</Link>      
         <Link className='HeaderLink' to="/Testpage"> Testpage </Link>      
     </>
   );

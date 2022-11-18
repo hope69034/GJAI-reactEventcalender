@@ -6,7 +6,7 @@ import Header from './compo/00.Header';
 import Timeline from './compo/01.Timeline';
 import Calendar from './compo/02.Calendar';
 import Mypage from './compo/03.Mypage';
-import Addbutton from './compo/04.Addbutton';
+import Addschedule from './compo/04.Addschedule';
 import Testpage from './compo/05.Testpage';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <Route path="/" element={<Timeline></Timeline>}></Route>
       <Route path="/Calendar" element={<Calendar></Calendar>}></Route>
       <Route path="/Mypage" element={<Mypage></Mypage>}></Route>
-      <Route path="/Addbutton" element={<Addbutton></Addbutton>}></Route>
+      <Route path="/Addschedule" element={<Addschedule></Addschedule>}></Route>
       <Route path="/Testpage" element={<Testpage></Testpage>}></Route>
     </Routes>
 
