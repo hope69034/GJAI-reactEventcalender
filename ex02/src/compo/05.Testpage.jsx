@@ -1,20 +1,43 @@
-import { Eventcalendar, getJson, toast, localeKo, Page, Input, formatDate, setOptions } from '@mobiscroll/react';
-import React from 'react'
+import { Eventcalendar, getJson, toast } from '@mobiscroll/react';
+import React from "react";
 import "@mobiscroll/react/dist/css/mobiscroll.min.css";
-/* import "@mobiscroll/react/dist/css/mobiscroll.css"; */
- 
 
-function Testpage() { 
+function Testpage() {
 
+    const [myEvents, setEvents] = React.useState([]);
+
+    React.useEffect(() => {
+        getJson('https://trial.mobiscroll.com/events/?vers=5', (events) => {
+            setEvents(events);
+        }, 'jsonp');
+    }, []);
     
+    const onEventClick = React.useCallback((event) => {
+        toast({
+            message: event.event.title
+        });
+    }, []);
+    
+    const view = React.useMemo(() => {
+        return {
+            calendar: { type: 'month' },
+          /*  agenda: { type: 'month' }   */  
+        };
+    }, []);
 
     return (
-    <>
-   <br></br> <h1>Testpage</h1>
-    </>
-       
+        <Eventcalendar
+            theme="ios" 
+            themeVariant="light"
+            clickToCreate={false}
+            dragToCreate={false}
+            dragToMove={false}
+            dragToResize={false}
+            eventDelete={false}
+            data={myEvents}
+            view={view}
+            onEventClick={onEventClick}
+       />
     ); 
 }
-
-
-export default Testpage;
+export default Testpage
