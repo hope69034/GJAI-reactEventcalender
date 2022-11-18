@@ -10,7 +10,7 @@ function Mypage() {
 
     return (
     <>
-   <br></br> <h1>mypage</h1>
+   <br></br> <h1>Mypage</h1>
     </>
        
     ); 
